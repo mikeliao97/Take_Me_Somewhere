@@ -1,5 +1,25 @@
-<h1> <%= @place %> </h1>
+<h1> <%= @place.city%> </h1>
 
-<%= button_to 'Yes', update_response_path(:go => "True", :place => @place) %>
-<%= button_to 'No', update_response_path(:go => "False", :place => @place) %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%= image_tag(@place.image_link, size: "600x400")%>
+<h6> <%= @place.description %> </h6>
+<h1> <%= @place.cateogry %> </h1>
+
+
+<%= button_to 'Yes', update_response_path(:go => "True", :place => @place), {class: 'btn btn-success btn-lg'}  %>
+<%= button_to 'No', update_response_path(:go => nil, :place => @place), {class: 'btn btn-danger btn-lg'} %>
 

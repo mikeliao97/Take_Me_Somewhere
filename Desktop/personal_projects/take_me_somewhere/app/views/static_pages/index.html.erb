@@ -1,1 +1,7 @@
 <h1> This is the index page that list all saved places! </h1>
+
+<% @places.each do |place| %>
+  <% if place.user_id %>
+      <li> <%= place.city%>   <%= place.country%> </li>
+  <% end %>
+<% end %>

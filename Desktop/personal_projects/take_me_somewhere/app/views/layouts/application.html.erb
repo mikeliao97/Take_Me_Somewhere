@@ -19,11 +19,17 @@
     <![endif]-->
   </head>
   <body>
-  <ul class="nav nav-tabs">
+    <div class="navbar navbar-default">
+      <div class="container">
+  <ul class="nav navbar-nav">
     <li role="presentation" class="active"><li> <%= link_to "Saved Places", static_pages_index_path %> </li>
       <li role="presentation"><%= link_to "My Preferences", static_pages_saved_path %></li>
       <li role="presentation"><%= link_to "Take Me Somewhere!", static_pages_take_me_path %></li>
   </ul>
+</div>
+  </div>
+    <div class="container">
     <%= yield %>
+    </div>
   </body>
 </html>
