@@ -1,7 +1,27 @@
-<h1> This is the index page that list all saved places! </h1>
+<h1> <%= image_tag("princeton_tiger.jpg", size: "200x200", :class => "img-circle") %> Hello Princeton Tigers!</h1>
+<br>
+<br>
 
-<% @places.each do |place| %>
-  <% if place.user_id %>
-      <li> <%= place.city%>   <%= place.country%> </li>
+<table class="table table-striped">
+  <tr>
+    <h3> <strong> <td> #</td> </strong> </h3>
+    <h3> <strong> <td> City </td> </strong> </h3>
+    <h3> <td> Country </td> </h3>
+    <h3> <td> Best Price </td> </h3>
+    <h3> <td>    </td> </h3>
+  </tr>
+  <% @places.each_with_index do |place, index| %>
+    <% if place.user_id %>
+      <tr>
+        <td> <%= index %> </td>
+        <td> <%= place.city %> </td>
+        <td> <%= place.country %> </td>
+        <td> <%= place.cateogry %> </td>
+        <td> <%= link_to "Book Now!", root_path%> </td>
+      </tr>
+    <% end %>
   <% end %>
-<% end %>
+</table>
+</div>
+
+

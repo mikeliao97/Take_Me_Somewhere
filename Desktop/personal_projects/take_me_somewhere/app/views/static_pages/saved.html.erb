@@ -1,2 +1,7 @@
-<h1>StaticPages#saved</h1>
-<p>Find me in app/views/static_pages/saved.html.erb</p>
+
+
+ <%= form_tag(update_results_path, method: "post") do %>
+      <%= label_tag(:q, "Search for:") %>
+      <%= text_field_tag(:q) %>
+      <%= submit_tag("Search") %>
+<% end %>
