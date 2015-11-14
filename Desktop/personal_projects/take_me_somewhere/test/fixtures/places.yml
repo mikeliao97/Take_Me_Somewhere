@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city: MyString
+  country: MyString
+  description: MyString
+  cateogry: MyString
+  image_link: MyString
+  promotional_link: MyString
+  plan_trip_link: MyString
+
+two:
+  city: MyString
+  country: MyString
+  description: MyString
+  cateogry: MyString
+  image_link: MyString
+  promotional_link: MyString
+  plan_trip_link: MyString
