@@ -1,0 +1,5 @@
+<h1> <%= @place %> </h1>
+
+<%= button_to 'Yes', update_response_path(:go?=> "True", :place => @place) %>
+<%= button_to 'No', update_response_path(:go?=> "False", :place => @place) %>
+
